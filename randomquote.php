@@ -1,4 +1,5 @@
 <?php
+$maxnumberofquotes = 5;
 $quotes = [
     1 => [
           'quote' => 'My life is my message.',
@@ -13,5 +14,13 @@ $quotes = [
           'quote' => 'I love those who can smile in trouble. ',
           'author' => 'Leonardo da Vinci',
     ],
+    4 => [
+          'quote' => 'Life is what happens when you’re busy making other plans.',
+          'author' => 'John Lennon',
+    ],
+    5 => [
+          'quote' => 'You’ve gotta dance like there’s nobody watching.',
+          'author' => 'William W. Purkey',
+    ],
 ];
-$qnumber = rand(1, 3);
+$qnumber = rand(1, $maxnumberofquotes);
