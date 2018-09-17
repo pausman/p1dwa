@@ -1,5 +1,12 @@
 <?php
+# Pat Ausman
+# Sept 2018
+# Project 1 external php file
+
+# declare a variable for the maximum number of quotes.
 $maxnumberofquotes = 5;
+
+# Array with quotes and authors
 $quotes = [
     1 => [
           'quote' => 'My life is my message.',
@@ -23,4 +30,6 @@ $quotes = [
           'author' => 'William W. Purkey',
     ],
 ];
+
+# Get a random number to access the quote array
 $qnumber = rand(1, $maxnumberofquotes);
